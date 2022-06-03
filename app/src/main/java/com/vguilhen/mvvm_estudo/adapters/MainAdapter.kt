@@ -49,7 +49,9 @@ class MainViewHolder(val binding: ResItemLiveBinding) : RecyclerView.ViewHolder(
 
         Glide.with(itemView.context)
             .applyDefaultRequestOptions(requestOptions)
-            .load(live.thumbnailUrl)
+                //add a url da thumbnail
+                //.load(live.thumbnailUrl)
+            .load(live.thumbnail)
             .into(binding.thumbnail)
 
         itemView.setOnClickListener {
