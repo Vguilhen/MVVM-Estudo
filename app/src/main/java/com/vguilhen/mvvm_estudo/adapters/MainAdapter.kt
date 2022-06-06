@@ -1,6 +1,5 @@
 package com.vguilhen.mvvm_estudo.adapters
 
-
 import com.vguilhen.mvvm_estudo.R
 import com.vguilhen.mvvm_estudo.databinding.ResItemLiveBinding
 import com.vguilhen.mvvm_estudo.models.Live
@@ -51,7 +50,7 @@ class MainViewHolder(val binding: ResItemLiveBinding) : RecyclerView.ViewHolder(
             .applyDefaultRequestOptions(requestOptions)
                 //add a url da thumbnail
                 //.load(live.thumbnailUrl)
-            .load(live.thumbnail)
+            .load(live.thumbnailUrl)
             .into(binding.thumbnail)
 
         itemView.setOnClickListener {
